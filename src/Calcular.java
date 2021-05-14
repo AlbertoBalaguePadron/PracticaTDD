@@ -4,13 +4,13 @@ public class Calcular {
     int inicio;
     int finall;
     int increment;
-    int actual; 
+    int actual;
 
     public Calcular(int inicio, int finall, int increment) {
         this.inicio = inicio;
         this.finall = finall;
         this.increment = increment;
-        this.actual = inicio; 
+        this.actual = inicio;
     }
 
     public boolean compro() {
@@ -30,15 +30,13 @@ public class Calcular {
         }
     }
 
-
-    public boolean  incrementuo() {
-
-
-
-        return ; 
+    public boolean incrementuo() {
+        this.actual = +increment;
+        if (actual >= finall) {
+            return false;
+        } else {
+            return true;
+        }
     }
-
-
-
 
 }
