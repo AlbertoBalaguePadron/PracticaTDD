@@ -11,4 +11,19 @@ public class Testcontador {
 
     }
 
+
+    @Test
+
+    public void testtincrem(){
+        Calcular cal = new Calcular(0, 10, 7);
+        cal.incrementuo();
+        cal.incrementuo();
+
+        assertEquals(true, cal.increment());
+    }
+
+
+
+
+
 }
