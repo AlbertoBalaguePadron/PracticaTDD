@@ -13,7 +13,6 @@ public class Testcontador {
 
 
     @Test
-
     public void testtincrem(){
         Calcular cal = new Calcular(0, 10, 1);
         cal.incrementuo();
@@ -23,6 +22,12 @@ public class Testcontador {
 
 
 
+    @Test
+    public void testtincrem(){
+        Calcular cal = new Calcular(0, 10, 11);
+        cal.superar();
 
+        assertEquals(true, cal.superar());
+    }
 
 }
