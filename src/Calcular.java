@@ -32,11 +32,17 @@ public class Calcular {
 
     public boolean incrementuo() {
         this.actual = +increment;
-        if (actual >= finall) {
+        if (this.actual >= this.finall) {
             return false;
         } else {
             return true;
         }
     }
+
+    public void resetear() {
+      this.actual = inicio; 
+    }
+
+
 
 }

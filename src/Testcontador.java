@@ -21,13 +21,4 @@ public class Testcontador {
     }
 
 
-
-    @Test
-    public void testtincrem(){
-        Calcular cal = new Calcular(0, 10, 11);
-        cal.superar();
-
-        assertEquals(true, cal.superar());
-    }
-
 }
