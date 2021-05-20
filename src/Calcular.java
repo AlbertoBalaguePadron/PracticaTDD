@@ -30,15 +30,6 @@ public class Calcular {
         }
     }
 
-    public boolean incrementuo() {
-        this.actual = +increment;
-        if (this.actual >= this.finall) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
     public boolean incrementuodesbordar() {
         this.actual = +increment;
         if (this.actual >= this.finall) {
