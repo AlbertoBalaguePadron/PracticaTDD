@@ -4,7 +4,11 @@ import org.junit.*;
 public class Testcontador {
 
 
-
+    @Test
+    public void testtcon(){
+        Calcular cal = new Calcular(0, 10,1); 
+        assertNotNull(cal);
+    }
 
 
 
