@@ -18,19 +18,12 @@ public class Testcontador {
         assertSame(cal, cal2);
     }
 
-
-
-
     @Test
     public void testtcontador() {
 
         Calcular cal = new Calcular(0, 10, 1);
         assertEquals(true, cal.compro());
     }
-
-
-
-
 
     @Test
     public void testtincrem(){
@@ -39,11 +32,6 @@ public class Testcontador {
 
         assertEquals(true, cal.incrementuo());
     }
-
-
-
-
-
 
     @Test 
     
@@ -55,6 +43,5 @@ public class Testcontador {
         cal.resetear();
         assertEquals(0, cal.resetear());
     }
-
 
 }
