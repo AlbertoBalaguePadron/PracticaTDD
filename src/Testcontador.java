@@ -12,7 +12,7 @@ public class Testcontador {
     @Test
     public void testigual() {
         Calcular cal = new Calcular(0, 1, 20);
-        Calcular cal2 = new Calcular(0, 10, 2);
+       cal.
         assertSame(cal, cal2);
     }
 
@@ -20,7 +20,7 @@ public class Testcontador {
     public void testtcontador() {
 
         Calcular cal = new Calcular(0, 10, 1);
-        assertEquals(true, cal.compro());
+        assertTrue(cal.compro());
     }
 
     @Test
@@ -28,7 +28,7 @@ public class Testcontador {
         Calcular cal = new Calcular(0, 10, 1);
         cal.incrementuodesbordar();
 
-        assertEquals(true, cal.incrementuodesbordar());
+        assertTrue(cal.incrementuodesbordar());
     }
 
     @Test
@@ -38,7 +38,7 @@ public class Testcontador {
         cal.incrementuodesbordar();
         cal.incrementuodesbordar();
 
-        assertEquals(true, cal.incrementuodesbordar());
+        assertTrue(cal.incrementuodesbordar());
     }
 
     @Test
@@ -46,7 +46,7 @@ public class Testcontador {
     public void testreset() {
         Calcular cal = new Calcular(2, 10, 5);
         cal.resetear();
-        assertEquals(true, cal.resetear());
+        assertTrue(cal.resetear());
     }
 
 }
