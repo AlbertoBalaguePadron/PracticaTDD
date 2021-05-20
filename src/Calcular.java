@@ -39,11 +39,19 @@ public class Calcular {
         }
     }
 
-    public boolean  resetear() {
-        this.actual = inicio;
-        return true; 
+    public boolean incrementuodesbordar() {
+        this.actual = +increment;
+        if (this.actual >= this.finall) {
+            resetear();
+            return true;
+        } else {
+            return true;
+        }
     }
 
-
+    public boolean resetear() {
+        this.actual = inicio;
+        return true;
+    }
 
 }
