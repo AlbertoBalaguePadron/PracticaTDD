@@ -14,7 +14,7 @@ public class Testcontador {
     @Test
     public void testigual(){
         Calcular cal = new Calcular(0,1, 2); 
-        Calcular cal2 = new Calcular(0,1, 2); 
+        Calcular cal2 = new Calcular(0,10, 3); 
         assertSame(cal, cal2);
     }
 
