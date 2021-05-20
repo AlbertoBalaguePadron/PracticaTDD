@@ -30,13 +30,13 @@ public class Calcular {
         }
     }
 
-    public boolean incrementuodesbordar() {
+    public int incrementuodesbordar() {
         this.actual = +increment;
-        if (this.actual >= this.finall) {
+        if (this.actual > this.finall) {
             resetear();
-            return true;
+            return this.actual;
         } else {
-            return true;
+            return this.actual;
         }
     }
 

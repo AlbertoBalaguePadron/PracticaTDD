@@ -10,14 +10,6 @@ public class Testcontador {
     }
 
     @Test
-    public void testigual() {
-        Calcular cal = new Calcular(0, 1, 20);
-        Calcular cal2 = new Calcular(0 , 1, 2);
-        cal2 = cal; 
-        assertSame(cal, cal2);
-    }
-
-    @Test
     public void testtcontador() {
 
         Calcular cal = new Calcular(0, 10, 1);
@@ -29,17 +21,19 @@ public class Testcontador {
         Calcular cal = new Calcular(0, 10, 1);
         cal.incrementuodesbordar();
 
-        assertTrue(cal.incrementuodesbordar());
+        assertEquals(1, cal.incrementuodesbordar());
     }
 
     @Test
     public void testtincremdesbor() {
-        Calcular cal = new Calcular(0, 10, 5);
-        cal.incrementuodesbordar();
+        Calcular cal = new Calcular(1, 3, 2);
         cal.incrementuodesbordar();
         cal.incrementuodesbordar();
 
-        assertTrue(cal.incrementuodesbordar());
+
+
+
+        assertEquals(0 , cal.incrementuodesbordar());
     }
 
     @Test
