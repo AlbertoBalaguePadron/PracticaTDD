@@ -39,8 +39,9 @@ public class Calcular {
         }
     }
 
-    public void resetear() {
-      this.actual = inicio; 
+    public boolean  resetear() {
+        this.actual = inicio;
+        return true; 
     }
 
 

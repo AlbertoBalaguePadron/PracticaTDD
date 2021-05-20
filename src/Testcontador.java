@@ -3,13 +3,21 @@ import org.junit.*;
 
 public class Testcontador {
 
+
+
+
+
+
+
     @Test
     public void testtcontador() {
 
         Calcular cal = new Calcular(0, 10, 1);
         assertEquals(true, cal.compro());
-
     }
+
+
+
 
 
     @Test
@@ -18,6 +26,22 @@ public class Testcontador {
         cal.incrementuo();
 
         assertEquals(true, cal.incrementuo());
+    }
+
+
+
+
+
+
+    @Test 
+    
+    public void testreset(){
+        Calcular cal = new Calcular(0, 10, 5);
+        cal.incrementuo();
+        cal.incrementuo();
+        cal.incrementuo();
+        cal.resetear();
+        assertEquals(0, cal.resetear());
     }
 
 
